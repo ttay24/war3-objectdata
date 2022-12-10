@@ -2,7 +2,7 @@ import War3MapW3d from "ttay24-mdx-m3-viewer/dist/cjs/parsers/w3x/w3d/file";
 import War3MapW3u from "ttay24-mdx-m3-viewer/dist/cjs/parsers/w3x/w3u/file";
 import Modification from "ttay24-mdx-m3-viewer/dist/cjs/parsers/w3x/w3u/modification";
 import ModifiedObject from "ttay24-mdx-m3-viewer/dist/cjs/parsers/w3x/w3u/modifiedobject";
-import { randomInRange } from "mdx-m3-viewer/dist/cjs/common/math";
+import { randomInRange } from "ttay24-mdx-m3-viewer/dist/cjs/common/math";
 
 export function war3ToTS(
   war3Type: string,
