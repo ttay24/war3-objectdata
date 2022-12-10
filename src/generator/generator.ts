@@ -275,7 +275,11 @@ export async function objectDataGenerator({
   upgradeData,
 }: GeneratorInput): Promise<GeneratorResult> {
   const unitAndItemProps = generateProps(unitAndItemMeta, weStrings);
-  const unitProps = unitAndItemProps.filter((prop) => <string>prop.row.string('useunit') === '1');
+  const unitProps = unitAndItemProps
+    .filter((prop) => 
+      <string>prop.row.string('useunit') === '1' || 
+      <string>prop.row.string('usehero') === '1'
+    );
   const itemProps = unitAndItemProps.filter((prop) => <string>prop.row.string('useitem') === '1');
   const destructableProps = generateProps(destructableMeta, weStrings);
   const doodadProps = generateProps(doodadMeta, weStrings);
